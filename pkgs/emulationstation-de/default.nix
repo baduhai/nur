@@ -13,7 +13,9 @@ stdenv.mkDerivation rec{
 
   patches = [ ./es_find_rules.patch ];
 
-  buildInputs = [ SDL2 curl cmake ffmpeg pugixml pkgconf freetype freeimage alsa-lib ];
+  nativeBuildInputs = [ cmake pkgconf ];
+
+  buildInputs = [ SDL2 curl ffmpeg pugixml freetype freeimage alsa-lib ];
 
   meta = with lib; {
     description = "A frontend for browsing and launching games from your multi-platform game collection.";
