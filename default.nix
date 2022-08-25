@@ -14,7 +14,6 @@
   modules = import ./modules; # NixOS modules
   overlays = import ./overlays; # nixpkgs overlays
 
-  koi = pkgs.callPackage ./pkgs/koi { };
-  # some-qt5-package = pkgs.libsForQt5.callPackage ./pkgs/some-qt5-package { };
+  koi = pkgs.libsForQt5.callPackage ./pkgs/koi { };
   # ...
 }
