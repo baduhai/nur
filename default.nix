@@ -16,5 +16,5 @@
 
   emulationstation-de = pkgs.callPackage ./pkgs/emulationstation-de { };
   koi = pkgs.libsForQt5.callPackage ./pkgs/koi { };
-  zarchive = = pkgs.callPackage ./pkgs/zarchive { };
+  zarchive = pkgs.callPackage ./pkgs/zarchive { };
 }
